@@ -1,0 +1,34 @@
+﻿Exercise 1, Haedani (2020) instructed us to:
+1. Create classes to open and close connections to SQL and Oracle databases
+2. Design should be flexible to allow addition of future DB type connections
+3. Each specific DB type connection should inherit from a base DbConnection
+4. DbConnection class should implement:
+
+	a. A connection property of type string
+	b. A timeout property of type TimeSpan
+	c. A method to open the connection
+	d. A method to close the connection
+
+Haedani (2020) has further instructed the open and close methods will be specific to the DB type, 
+hence, the code must be implemented in the specific classes.  For learning purposes, the connection 
+code will be represented by a simple output to the console (Haedani, 2020).
+
+A connection will be invalid if the connection string is null or blank; throw an exception if this case ocurrs (Haedani, 2020).
+
+
+Exercise 2, Haedani (2020) instructs us to:
+1. Create a DbCommand class to run an instruction on each DB type 
+2. This class should be flexible to handle current and future DB types
+3. The DbCommand will require a valid DbConnection object and instruction (i.e. not null or white space)
+4. For learning purposes, we will use pass an instruction of type string and will represent its execution
+   with a simple output to the console
+
+Haedani (2020) has stated the DbCommand class will need to:
+1. Connect to the DB
+2. Execute the DB instruction
+3. Disconnect from the DB
+
+
+References:
+Haedani, Mosh.  (2020).  C# Intermediate: Classes, Interfaces and OOP (Section 5: Polymorhism: Third Pillar of OOP: Exercises) [PDF document].  Udemy.  
+https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/learn/lecture/2480692#overview
